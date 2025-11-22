@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Cpu, Rocket, Code } from "lucide-react";
+import { Monitor, Cpu, Rocket, Code } from "lucide-react";
 
 interface ProjectCardProps {
   icon: React.ReactNode;
@@ -73,7 +73,7 @@ const ProjectCard = ({ icon, title, subtitle, description, tags, delay }: Projec
 export const Projects = () => {
   const projects = [
     {
-      icon: <Brain className="w-8 h-8" />,
+      icon: <Monitor className="w-8 h-8" />,
       title: "Sim-to-Real Validation Research",
       subtitle: "UC Berkeley • Team Research Initiative",
       description:

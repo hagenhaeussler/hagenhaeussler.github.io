@@ -12,6 +12,7 @@ interface EducationItemProps {
   location: string;
   highlights: string[];
   delay: number;
+  website: string;
 }
 
 const EducationItem = ({
@@ -22,6 +23,7 @@ const EducationItem = ({
   location,
   highlights,
   delay,
+  website,
 }: EducationItemProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -59,13 +61,18 @@ const EducationItem = ({
       <div className="ml-8 p-6 rounded-2xl bg-card hover:shadow-elegant transition-all duration-300">
         <div className="flex gap-6 items-start">
           <div className="flex-shrink-0">
-            <div className="w-20 h-20 rounded-xl bg-background border-2 border-border p-3 flex items-center justify-center overflow-hidden">
+            <a
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-20 h-20 rounded-xl bg-background border-2 border-border p-3 flex items-center justify-center overflow-hidden hover:border-primary/50 transition-colors"
+            >
               <img
                 src={logo}
                 alt={institution}
                 className="w-full h-full object-contain"
               />
-            </div>
+            </a>
           </div>
 
           <div className="flex-1 space-y-3">
@@ -108,6 +115,7 @@ export const Education = () => {
       degree: "International Exchange Student",
       period: "Aug 2025 – Present",
       location: "Berkeley, California, USA",
+      website: "https://www.berkeley.edu/",
       highlights: [
         "CS 188: Introduction to Artificial Intelligence",
         "EECS 126: Probability and Random Processes",
@@ -120,9 +128,12 @@ export const Education = () => {
       degree: "B.Sc. Engineering Science",
       period: "Sep 2023 – Present",
       location: "Munich, Germany",
+      website: "https://www.tum.de/en/",
       highlights: [
-        "Focus on Intelligent Cyber-Physical Systems",
-        "Bridging AI, robotics, and embedded platforms",
+        "Mathematics: Linear Algebra, Single/Multivariable Calculus, ODEs, PDEs, Tensor Calculus",
+        "Physics & Engineering: Mechanics, Fluid Dynamics, Thermodynamics, Heat Transfer, Electromagnetism, Control Theory",
+        "Computer Science: Computer Architecture, Data Structures, Algorithms, Databases, SQL, C, Java, UML",
+        "Specialized: Circuit Design, Semiconductors, Material Science, Bioengineering, CAD",
       ],
     },
     {
@@ -131,6 +142,7 @@ export const Education = () => {
       degree: "High School Exchange Year",
       period: "Oct 2020 – Jun 2021",
       location: "Kailua-Kona, Hawaii, USA",
+      website: "https://www.parkerschoolhawaii.org/",
       highlights: [
         "GPA: 4.0/4.14",
         "Coursework: AP Physics, Computer Science, 3D Design",
@@ -142,6 +154,7 @@ export const Education = () => {
       degree: "Abitur: 1.0 (GPA 4.0)",
       period: "Sep 2014 – Jun 2023",
       location: "Halle (Saale), Germany",
+      website: "https://cantorgymnasium.de/",
       highlights: [
         "8 years Class President, 2 years School President",
         "Focus: Mathematics and Natural Sciences",

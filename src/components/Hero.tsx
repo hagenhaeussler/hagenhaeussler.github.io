@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
-import { Mail, Linkedin, FileText, Moon, Sun } from "lucide-react";
+import { Mail, Linkedin, FileText, Moon, Sun, Github } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
@@ -17,28 +17,46 @@ export const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="container max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div
-            className={`space-y-6 transition-all duration-1000 ${
+            className={`transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
-              Hagen
-              <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Häußler
+            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight">
+              Hagen{" "}
+              <span className="text-xl lg:text-2xl">
+                Haeussler
               </span>
             </h1>
             
+            <div className="space-y-2 mt-4">
             <p className="text-xl text-muted-foreground leading-relaxed">
-              I'm an Engineering Science student at the Technical University of Munich, currently on exchange at UC Berkeley. 
-              I'm passionate about intelligent cyber-physical systems, bridging AI with real-world robotics and autonomous systems.
+              I'm an Engineering Science student at the Technical University of Munich, currently on a specialization year at UC Berkeley sponsored by{" "}
+              <a
+                href="https://www.studienstiftung.de/en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Studienstiftung des deutschen Volkes
+              </a>
+              . I'm passionate about intelligent cyber-physical systems, bridging AI with real-world robotics and autonomous systems.
             </p>
 
             <p className="text-lg text-muted-foreground">
-              In my free time, I enjoy judo, volleyball, reading, and exploring fascinating new technologies.
+              In my free time, I enjoy{" "}
+              <a
+                href="https://www.judoclub-halle.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                judo
+              </a>
+              , volleyball, reading, and exploring fascinating new technologies.
             </p>
+            </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Button
@@ -67,6 +85,15 @@ export const Hero = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="https://github.com/hagenhaeussler"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
               </a>
               
               <button

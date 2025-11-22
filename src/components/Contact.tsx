@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Linkedin, MapPin, FileText } from "lucide-react";
+import { Mail, Linkedin, MapPin, FileText, Github } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export const Contact = () => {
@@ -42,6 +42,12 @@ export const Contact = () => {
       href: "https://linkedin.com/in/hagen-häußler-6bb293289",
     },
     {
+      icon: <Github className="w-6 h-6" />,
+      label: "GitHub",
+      value: "View my projects",
+      href: "https://github.com/hagenhaeussler",
+    },
+    {
       icon: <MapPin className="w-6 h-6" />,
       label: "Location",
       value: "Berkeley, CA / Munich, DE",
@@ -66,7 +72,7 @@ export const Contact = () => {
         </div>
 
         <div
-          className={`grid md:grid-cols-3 gap-6 mb-12 transition-all duration-700 delay-200 ${
+          className={`grid md:grid-cols-4 gap-6 mb-12 transition-all duration-700 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
