@@ -7,7 +7,7 @@ interface ProjectCardProps {
   icon: React.ReactNode;
   title: string;
   subtitle: string;
-  description: string;
+  description: string | React.ReactNode;
   tags: string[];
   delay: number;
 }
@@ -44,15 +44,15 @@ const ProjectCard = ({ icon, title, subtitle, description, tags, delay }: Projec
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <Card className="p-8 h-full hover:shadow-elegant transition-all duration-300 border-2 hover:border-primary/20 group">
-        <div className="space-y-4">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center text-primary-foreground group-hover:scale-110 transition-transform duration-300">
+      <Card className="p-6 h-full hover:shadow-elegant transition-all duration-300 border-2 hover:border-primary/20 group">
+        <div className="space-y-3">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center text-primary-foreground group-hover:scale-110 transition-transform duration-300">
             {icon}
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-1">{title}</h3>
-            <p className="text-primary font-medium">{subtitle}</p>
+            <h3 className="text-xl font-bold mb-1">{title}</h3>
+            <p className="text-primary font-medium text-sm">{subtitle}</p>
           </div>
 
           <p className="text-muted-foreground leading-relaxed">{description}</p>
@@ -84,8 +84,20 @@ export const Projects = () => {
       icon: <Cpu className="w-8 h-8" />,
       title: "Embedded Cyber-Physical Systems",
       subtitle: "EECS 149 • UC Berkeley",
-      description:
-        "Designing embedded systems using Lingua Franca with C for timing and concurrency modeling. Implementing low-level software interfacing with sensors on Pololu 3pi+ 2040 robot.",
+      description: (
+        <>
+          Designing{" "}
+          <a
+            href="https://www.lf-lang.org/embedded-lab/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            embedded systems using Lingua Franca with C
+          </a>{" "}
+          for timing and concurrency modeling. Implementing low-level software interfacing with sensors on Pololu 3pi+ 2040 robot.
+        </>
+      ),
       tags: ["Embedded Systems", "C", "Robotics", "Real-Time"],
     },
     {

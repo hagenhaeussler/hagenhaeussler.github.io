@@ -1,13 +1,17 @@
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
-import { Mail, Linkedin, Github, FileText } from "lucide-react";
+import { Mail, Linkedin, FileText, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
+    setMounted(true);
   }, []);
 
   return (
@@ -19,14 +23,8 @@ export const Hero = () => {
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="inline-block">
-              <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium">
-                Engineering Science Student
-              </span>
-            </div>
-            
             <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
-              Hagen Kuno
+              Hagen
               <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Häußler
@@ -42,7 +40,7 @@ export const Hero = () => {
               In my free time, I enjoy judo, volleyball, reading, and exploring fascinating new technologies.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap items-center gap-4 pt-4">
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant"
@@ -54,35 +52,30 @@ export const Hero = () => {
                 </a>
               </Button>
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 hover:bg-accent/10"
-                asChild
-              >
-                <a href="#contact">
-                  Get In Touch
-                </a>
-              </Button>
-            </div>
-
-            <div className="flex gap-4 pt-4">
               <a
                 href="mailto:hagen.haeussler@gmx.de"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
                 aria-label="Email"
               >
-                <Mail className="h-6 w-6" />
+                <Mail className="h-5 w-5" />
               </a>
               <a
                 href="https://linkedin.com/in/hagen-häußler-6bb293289"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-5 w-5" />
               </a>
+              
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors ml-2"
+                aria-label="Toggle theme"
+              >
+                {mounted && (theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />)}
+              </button>
             </div>
           </div>
 
