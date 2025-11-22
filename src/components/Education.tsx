@@ -156,9 +156,6 @@ export const Education = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Education <span className="text-accent">&</span> Journey
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            My academic path across continents, from Germany to Hawaii to California
-          </p>
         </div>
 
         <div className="space-y-12">
