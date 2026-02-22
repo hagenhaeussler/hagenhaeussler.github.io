@@ -64,7 +64,7 @@ export const Hero = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant"
                 asChild
               >
-                <a href="/hagen-s-digital-hub/Hagen_Haeussler_CV.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/Hagen_Haeussler_CV.pdf" target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-5 w-5" />
                   View My CV
                 </a>
