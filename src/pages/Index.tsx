@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import { Hero } from "@/components/Hero";
 import { Education } from "@/components/Education";
 import { Projects } from "@/components/Projects";
+import { Travels } from "@/components/Travels";
 import { ScrollIndicator } from "@/components/ScrollIndicator";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState(0);
-  const sections = ["hero", "education", "projects"];
+  const sections = ["hero", "education", "projects", "travels"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,10 +46,11 @@ const Index = () => {
       <Hero />
       <Education />
       <Projects />
+      <Travels />
 
       <footer className="py-8 text-center text-muted-foreground border-t border-border">
         <p className="text-sm">
-          © {new Date().getFullYear()} Hagen Häußler. Built with passion and React.
+          © {new Date().getFullYear()} Hagen Häußler
         </p>
       </footer>
     </div>

@@ -117,8 +117,8 @@ export const Education = () => {
       location: "Berkeley, California, USA",
       website: "https://www.berkeley.edu/",
       highlights: [
-        "EECS151: Introduction to Digital Design and Integrated Circuits",
-        "CS169L: Software Engineering Team Project",
+        "EECS 151: Introduction to Digital Design and Integrated Circuits",
+        "CS 169L: Software Engineering Team Project",
         "ENGIN 183E: Technology & Entrepreneurship",
         "CS 188: Introduction to Artificial Intelligence",
         "EECS 126: Probability and Random Processes",
