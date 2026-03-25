@@ -1,10 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Monitor, Cpu, Rocket, Code } from "lucide-react";
 
 interface ProjectCardProps {
-  icon: React.ReactNode;
   title: string;
   subtitle: string;
   description: string | React.ReactNode;
@@ -12,7 +10,7 @@ interface ProjectCardProps {
   delay: number;
 }
 
-const ProjectCard = ({ icon, title, subtitle, description, tags, delay }: ProjectCardProps) => {
+const ProjectCard = ({ title, subtitle, description, tags, delay }: ProjectCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -46,10 +44,6 @@ const ProjectCard = ({ icon, title, subtitle, description, tags, delay }: Projec
     >
       <Card className="p-6 h-full hover:shadow-elegant transition-all duration-300 border-2 hover:border-primary/20 group">
         <div className="space-y-3">
-          <div className="w-12 h-12 rounded-2xl gradient-primary flex items-center justify-center text-primary-foreground group-hover:scale-110 transition-transform duration-300">
-            {icon}
-          </div>
-
           <div>
             <h3 className="text-xl font-bold mb-1">{title}</h3>
             <p className="text-primary font-medium text-sm">{subtitle}</p>
@@ -73,7 +67,6 @@ const ProjectCard = ({ icon, title, subtitle, description, tags, delay }: Projec
 export const Projects = () => {
   const projects = [
     {
-      icon: <Monitor className="w-8 h-8" />,
       title: "Sim-to-Real Validation Research",
       subtitle: "UC Berkeley • Team Research Initiative",
       description:
@@ -81,7 +74,6 @@ export const Projects = () => {
       tags: ["Robotics", "Formal Methods", "Research", "Python"],
     },
     {
-      icon: <Cpu className="w-8 h-8" />,
       title: "Embedded Cyber-Physical Systems",
       subtitle: "EECS 149 • UC Berkeley",
       description: (
@@ -101,7 +93,6 @@ export const Projects = () => {
       tags: ["Embedded Systems", "C", "Robotics", "Real-Time"],
     },
     {
-      icon: <Code className="w-8 h-8" />,
       title: "AI Search & Learning Algorithms",
       subtitle: "CS 188 • UC Berkeley",
       description:
@@ -109,7 +100,6 @@ export const Projects = () => {
       tags: ["AI", "Machine Learning", "Python", "Algorithms"],
     },
     {
-      icon: <Rocket className="w-8 h-8" />,
       title: "Hardware Engineering Projects",
       subtitle: "Independent Work",
       description:

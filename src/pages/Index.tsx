@@ -3,11 +3,12 @@ import { Hero } from "@/components/Hero";
 import { Education } from "@/components/Education";
 import { Projects } from "@/components/Projects";
 import { Travels } from "@/components/Travels";
+import { BookRecommendations } from "@/components/BookRecommendations";
 import { ScrollIndicator } from "@/components/ScrollIndicator";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState(0);
-  const sections = ["hero", "education", "projects", "travels"];
+  const sections = ["hero", "education", "projects", "travels", "book-recommendations"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,6 +48,7 @@ const Index = () => {
       <Education />
       <Projects />
       <Travels />
+      <BookRecommendations />
 
       <footer className="py-8 text-center text-muted-foreground border-t border-border">
         <p className="text-sm">
