@@ -59,9 +59,6 @@ export const Travels = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Travels <span className="text-accent">&</span> Adventures
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A chronological snapshot of places and moments along the way
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

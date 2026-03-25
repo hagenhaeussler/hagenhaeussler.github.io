@@ -26,7 +26,7 @@ export const Hero = () => {
             <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight">
               Hagen{" "}
               <span className="text-xl lg:text-2xl">
-                Haeussler
+                Haeussler (Häußler)
               </span>
             </h1>
             
@@ -41,20 +41,7 @@ export const Hero = () => {
               >
                 Studienstiftung des deutschen Volkes
               </a>
-              . I'm passionate about intelligent cyber-physical systems, bridging AI with real-world robotics and autonomous systems.
-            </p>
-
-            <p className="text-lg text-muted-foreground">
-              In my free time, I enjoy{" "}
-              <a
-                href="https://www.judoclub-halle.de/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                judo
-              </a>
-              , volleyball, reading, and exploring fascinating new technologies.
+              . I'm passionate about Application Specific Integrated Circuits, machine learning in cyber-physical sytems, and full-stack software development.
             </p>
             </div>
 

@@ -46,7 +46,7 @@ const ProjectCard = ({ icon, title, subtitle, description, tags, delay }: Projec
     >
       <Card className="p-6 h-full hover:shadow-elegant transition-all duration-300 border-2 hover:border-primary/20 group">
         <div className="space-y-3">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-primary flex items-center justify-center text-primary-foreground group-hover:scale-110 transition-transform duration-300">
+          <div className="w-12 h-12 rounded-2xl gradient-primary flex items-center justify-center text-primary-foreground group-hover:scale-110 transition-transform duration-300">
             {icon}
           </div>
 
@@ -125,9 +125,6 @@ export const Projects = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Projects <span className="text-accent">&</span> Research
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Exploring the intersection of AI, robotics, and embedded systems
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
