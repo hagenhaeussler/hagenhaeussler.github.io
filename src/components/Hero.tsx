@@ -32,7 +32,7 @@ export const Hero = () => {
             
             <div className="space-y-2 mt-4">
             <p className="text-xl text-muted-foreground leading-relaxed">
-              I'm an Engineering Science student at the Technical University of Munich, currently on a specialization year at UC Berkeley sponsored by{" "}
+              I'm an Engineering Science student at the Technical University of Munich. I spent the past two semesters at UC Berkeley, sponsored by{" "}
               <a
                 href="https://www.studienstiftung.de/en"
                 target="_blank"
@@ -41,7 +41,7 @@ export const Hero = () => {
               >
                 Studienstiftung des deutschen Volkes
               </a>
-              . I'm passionate about Application Specific Integrated Circuits, machine learning in cyber-physical sytems, and full-stack software development.
+              . I'm passionate about Application Specific Integrated Circuits, machine learning in cyber-physical systems, robots, and full-stack software development.
             </p>
             </div>
 
