@@ -119,12 +119,16 @@ All colors MUST be HSL.
     scroll-behavior: smooth;
   }
 
-  [class*="rounded"]:not(.round-control) {
+  [class*="rounded"]:not(.round-control):not(.rounded-control) {
     border-radius: 0 !important;
   }
 
   .round-control {
     border-radius: 9999px !important;
+  }
+
+  .rounded-control {
+    border-radius: 0.75rem !important;
   }
 }
 

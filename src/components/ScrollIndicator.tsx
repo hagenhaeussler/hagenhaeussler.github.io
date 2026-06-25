@@ -15,7 +15,7 @@ export const ScrollIndicator = ({ sections, activeSection, onSectionClick }: Scr
           key={index}
           onClick={() => onSectionClick(index)}
           className={cn(
-            "w-3 h-3 transition-all duration-300",
+            "round-control w-3 h-3 transition-all duration-300",
             activeSection === index
               ? "bg-primary scale-125"
               : "bg-muted-foreground/40 hover:bg-primary hover:scale-110"

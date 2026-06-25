@@ -48,7 +48,7 @@ export const Hero = () => {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant"
+                className="rounded-control bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant"
                 asChild
               >
                 <a href="/Hagen_Haeussler_CV.pdf" target="_blank" rel="noopener noreferrer">
