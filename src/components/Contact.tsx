@@ -79,7 +79,7 @@ export const Contact = () => {
           {contactMethods.map((method, index) => (
             <Card
               key={index}
-              className="p-6 text-center hover:shadow-elegant transition-all duration-300 border-2 hover:border-primary/20"
+              className="p-6 text-center hover:shadow-elegant transition-all duration-300"
             >
               {method.href ? (
                 <a
@@ -88,7 +88,7 @@ export const Contact = () => {
                   rel={method.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="block space-y-3"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto">
+                  <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary mx-auto">
                     {method.icon}
                   </div>
                   <div>
@@ -100,7 +100,7 @@ export const Contact = () => {
                 </a>
               ) : (
                 <div className="space-y-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto">
+                  <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary mx-auto">
                     {method.icon}
                   </div>
                   <div>
@@ -138,7 +138,7 @@ export const Contact = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+                className="text-primary-foreground hover:bg-primary-foreground/10"
                 asChild
               >
                 <a href="mailto:hagen.haeussler@gmx.de">

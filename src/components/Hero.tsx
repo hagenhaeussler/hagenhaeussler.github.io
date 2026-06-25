@@ -59,7 +59,7 @@ export const Hero = () => {
 
               <a
                 href="mailto:hagen.haeussler@gmx.de"
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                className="round-control w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
@@ -68,7 +68,7 @@ export const Hero = () => {
                 href="https://linkedin.com/in/hagen-häußler-6bb293289"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                className="round-control w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
@@ -77,7 +77,7 @@ export const Hero = () => {
                 href="https://github.com/hagenhaeussler"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+                className="round-control w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
@@ -85,7 +85,7 @@ export const Hero = () => {
               
               <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors ml-2"
+                className="round-control w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors ml-2"
                 aria-label="Toggle theme"
               >
                 {mounted && (theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />)}
@@ -99,11 +99,11 @@ export const Hero = () => {
             }`}
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-3xl opacity-20 animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-accent blur-3xl opacity-20 animate-pulse" />
               <img
                 src={profileImage}
                 alt="Hagen Häußler"
-                className="relative rounded-3xl shadow-elegant w-full max-w-md object-cover aspect-square"
+                className="relative shadow-elegant w-full max-w-md object-cover aspect-square"
               />
             </div>
           </div>

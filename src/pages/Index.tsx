@@ -50,7 +50,7 @@ const Index = () => {
       <Travels />
       <BookRecommendations />
 
-      <footer className="py-8 text-center text-muted-foreground border-t border-border">
+      <footer className="py-8 text-center text-muted-foreground">
         <p className="text-sm">
           © {new Date().getFullYear()} Hagen Häußler
         </p>

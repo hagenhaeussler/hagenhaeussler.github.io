@@ -65,7 +65,7 @@ export const Travels = () => {
           {travels.map((travel) => (
             <Card
               key={travel.title}
-              className="overflow-hidden border-2 hover:border-primary/20 transition-all duration-300 hover:shadow-elegant"
+              className="overflow-hidden transition-all duration-300 hover:shadow-elegant"
             >
               <img
                 src={travel.image}

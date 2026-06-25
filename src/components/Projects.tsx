@@ -42,7 +42,7 @@ const ProjectCard = ({ title, subtitle, description, tags, delay }: ProjectCardP
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <Card className="p-6 h-full hover:shadow-elegant transition-all duration-300 border-2 hover:border-primary/20 group">
+      <Card className="p-6 h-full hover:shadow-elegant transition-all duration-300 group">
         <div className="space-y-3">
           <div>
             <h3 className="text-xl font-bold mb-1">{title}</h3>
@@ -53,7 +53,7 @@ const ProjectCard = ({ title, subtitle, description, tags, delay }: ProjectCardP
 
           <div className="flex flex-wrap gap-2 pt-2">
             {tags.map((tag, index) => (
-              <Badge key={index} variant="secondary" className="bg-accent/10 text-accent border-accent/20">
+              <Badge key={index} variant="secondary" className="bg-accent/10 text-accent">
                 {tag}
               </Badge>
             ))}

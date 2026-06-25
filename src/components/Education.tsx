@@ -56,16 +56,16 @@ const EducationItem = ({
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-primary rounded-full transform origin-top transition-transform duration-500 group-hover:scale-y-105" />
+      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-primary transform origin-top transition-transform duration-500 group-hover:scale-y-105" />
       
-      <div className="ml-8 p-6 rounded-2xl bg-card hover:shadow-elegant transition-all duration-300">
+      <div className="ml-8 p-6 bg-card hover:shadow-elegant transition-all duration-300">
         <div className="flex flex-col sm:flex-row gap-6 items-start">
           <div className="flex-shrink-0">
             <a
               href={website}
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-20 h-20 rounded-xl bg-background border-2 border-border p-3 flex items-center justify-center overflow-hidden hover:border-primary/50 transition-colors"
+              className="block w-20 h-20 bg-background p-3 flex items-center justify-center overflow-hidden transition-colors"
             >
               <img
                 src={logo}
@@ -83,11 +83,11 @@ const EducationItem = ({
 
             <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent" />
+                <span className="w-2 h-2 bg-accent" />
                 {period}
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent" />
+                <span className="w-2 h-2 bg-accent" />
                 {location}
               </span>
             </div>
