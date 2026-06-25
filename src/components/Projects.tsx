@@ -67,6 +67,27 @@ const ProjectCard = ({ title, subtitle, description, tags, delay }: ProjectCardP
 export const Projects = () => {
   const projects = [
     {
+      title: "Tutoring Platform for Independent Online Tutors",
+      subtitle: "ENGIN 183E • UC Berkeley",
+      description:
+        "Developed a full-stack software solution for independent online tutors after 50+ customer interviews. Built the frontend and backend with Google Auth, Calendar integration, and OpenAI API features, and began working with beta users.",
+      tags: ["Full-Stack", "Google Auth", "Calendar API", "OpenAI"],
+    },
+    {
+      title: "BJC Teacher Tracker Rails Project",
+      subtitle: "CS 169L • UC Berkeley",
+      description:
+        "Worked on BJC Teacher Tracker, a Ruby on Rails curriculum management system for UC Berkeley. Practiced maintainable team software through code review, automated testing, feature flags, documentation, and legacy-code integration.",
+      tags: ["Ruby on Rails", "Testing", "Feature Flags", "Team Software"],
+    },
+    {
+      title: "ASIC RISC-V & Cache Optimization Challenge",
+      subtitle: "EECS 151 • UC Berkeley",
+      description:
+        "Designed a direct-mapped cache for a RISC-V ASIC optimization challenge, balancing area, energy, and performance. Achieved a 500% figure-of-merit increase and won among 30+ participating teams.",
+      tags: ["RISC-V", "ASIC", "Cache Design", "Optimization"],
+    },
+    {
       title: "Sim-to-Real Validation Research",
       subtitle: "UC Berkeley • Team Research Initiative",
       description:
