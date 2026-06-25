@@ -90,8 +90,19 @@ export const Projects = () => {
     {
       title: "Sim-to-Real Validation Research",
       subtitle: "UC Berkeley • Team Research Initiative",
-      description:
-        "Investigating the sim-to-real gap in robotics through falsification-based formal verification, searching for scenarios where simulation and reality diverge. Working with real robot hardware for validation.",
+      description: (
+        <>
+          <a
+            href="/Sim2Real_Research_Project_UC_Berkeley_2025.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            Investigating the sim-to-real gap in robotics through falsification-based formal verification
+          </a>
+          , searching for scenarios where simulation and reality diverge. Working with real robot hardware for validation.
+        </>
+      ),
       tags: ["Robotics", "Formal Methods", "Research", "Python"],
     },
     {
