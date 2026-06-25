@@ -51,6 +51,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 18%));
     --gradient-accent: linear-gradient(135deg, hsl(0 0% 68%), hsl(0 0% 90%));
     --shadow-elegant: 0 20px 60px -10px hsl(0 0% 0% / 0.18);
+    --shadow-deep: 0 28px 72px -14px hsl(0 0% 0% / 0.3);
     --shadow-glow: 0 0 40px hsl(0 0% 70% / 0.24);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -97,6 +98,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 20%));
     --gradient-accent: linear-gradient(135deg, hsl(0 0% 58%), hsl(0 0% 82%));
     --shadow-elegant: 0 20px 60px -10px hsl(0 0% 0% / 0.5);
+    --shadow-deep: 0 30px 78px -14px hsl(0 0% 0% / 0.7);
     --shadow-glow: 0 0 40px hsl(0 0% 76% / 0.3);
   }
 }
@@ -143,6 +145,10 @@ All colors MUST be HSL.
 
   .shadow-elegant {
     box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-deep {
+    box-shadow: var(--shadow-deep);
   }
 
   .shadow-glow {

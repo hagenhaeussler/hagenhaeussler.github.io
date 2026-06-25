@@ -42,7 +42,7 @@ const ProjectCard = ({ title, subtitle, description, tags, delay }: ProjectCardP
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <Card className="p-6 h-full hover:shadow-elegant transition-all duration-300 group">
+      <Card className="p-6 h-full shadow-elegant transition-all duration-300 ease-out transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:shadow-deep group">
         <div className="space-y-3">
           <div>
             <h3 className="text-xl font-bold mb-1">{title}</h3>

@@ -58,7 +58,7 @@ const EducationItem = ({
     >
       <div className="absolute left-0 top-0 h-full w-1 bg-gradient-primary transform origin-top transition-transform duration-500 group-hover:scale-y-105" />
       
-      <div className="ml-8 p-6 bg-card hover:shadow-elegant transition-all duration-300">
+      <div className="ml-8 p-6 bg-card shadow-elegant transition-all duration-300 ease-out transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:shadow-deep">
         <div className="flex flex-col sm:flex-row gap-6 items-start">
           <div className="flex-shrink-0">
             <a
