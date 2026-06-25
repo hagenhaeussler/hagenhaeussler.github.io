@@ -6,6 +6,7 @@ import egypt2023 from "@/assets/Egypt_2023.jpg";
 import peru2023 from "@/assets/Peru_2023.jpg";
 import austria2024 from "@/assets/Austria_2024.png";
 import sanJose2026 from "@/assets/SanJose_2026.png";
+import hawaii2026 from "@/assets/Hawaii_2026.jpeg";
 import alphaCentauri2100 from "@/assets/AlphaCentauri_2100.jpg";
 
 interface TravelItem {
@@ -43,6 +44,10 @@ export const Travels = () => {
     {
       image: sanJose2026,
       title: "San Jose, 2026",
+    },
+    {
+      image: hawaii2026,
+      title: "Hawaii, 2026",
     },
     {
       image: alphaCentauri2100,
