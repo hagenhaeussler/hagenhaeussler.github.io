@@ -67,20 +67,6 @@ const ProjectCard = ({ title, subtitle, description, tags, delay }: ProjectCardP
 export const Projects = () => {
   const projects = [
     {
-      title: "Tutoring Platform for Independent Online Tutors",
-      subtitle: "ENGIN 183E • UC Berkeley",
-      description:
-        "Developed a full-stack software solution for independent online tutors after 50+ customer interviews. Built the frontend and backend with Google Auth, Calendar integration, and OpenAI API features, and began working with beta users.",
-      tags: ["Full-Stack", "Google Auth", "Calendar API", "OpenAI"],
-    },
-    {
-      title: "BJC Teacher Tracker Rails Project",
-      subtitle: "CS 169L • UC Berkeley",
-      description:
-        "Worked on BJC Teacher Tracker, a Ruby on Rails curriculum management system for UC Berkeley. Practiced maintainable team software through code review, automated testing, feature flags, documentation, and legacy-code integration.",
-      tags: ["Ruby on Rails", "Testing", "Feature Flags", "Team Software"],
-    },
-    {
       title: "ASIC RISC-V & Cache Optimization Challenge",
       subtitle: "EECS 151 • UC Berkeley",
       description:
@@ -96,7 +82,7 @@ export const Projects = () => {
             href="/Sim2Real_Research_Project_UC_Berkeley_2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary hover:underline"
+            className="text-primary underline"
           >
             Investigating the sim-to-real gap in robotics through falsification-based formal verification
           </a>
@@ -115,7 +101,7 @@ export const Projects = () => {
             href="https://www.lf-lang.org/embedded-lab/index.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary hover:underline"
+            className="text-primary underline"
           >
             embedded systems using Lingua Franca with C
           </a>{" "}
@@ -130,6 +116,33 @@ export const Projects = () => {
       description:
         "Implemented DFS, BFS, A*, minimax with alpha-beta pruning, Q-learning, and Bayes network inference with particle filtering. Comprehensive AI fundamentals project series.",
       tags: ["AI", "Machine Learning", "Python", "Algorithms"],
+    },
+    {
+      title: "Tutoring Platform for Independent Online Tutors",
+      subtitle: "ENGIN 183E • UC Berkeley",
+      description:
+        "Developed a full-stack software solution for independent online tutors after 50+ customer interviews. Built the frontend and backend with Google Auth, Calendar integration, and OpenAI API features, and began working with beta users.",
+      tags: ["Full-Stack", "Google Auth", "Calendar API", "OpenAI"],
+    },
+    {
+      title: "BJC Teacher Tracker Rails Project",
+      subtitle: "CS 169L • UC Berkeley",
+      description: (
+        <>
+          Worked on{" "}
+          <a
+            href="https://github.com/beautyjoy/BJC-Teacher-Tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline"
+          >
+            BJC Teacher Tracker
+          </a>
+          , a Ruby on Rails curriculum management system for UC Berkeley. Practiced maintainable team software through code review,
+          automated testing, feature flags, documentation, and legacy-code integration.
+        </>
+      ),
+      tags: ["Ruby on Rails", "Testing", "Feature Flags", "Team Software"],
     },
     {
       title: "Hardware Engineering Projects",
